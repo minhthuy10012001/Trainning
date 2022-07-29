@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="css/de4.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+    <title>GYMAX</title>
+    
+</head>
+<body>
+        <div class = "all">
+            <header>
+                
+                <div class="header-banner" >
+                    
+                    <div class="header">
+                        
+                        <div class = "container">
+                            <div class="header-main">
+                                <div class="header-logo">
+                                    <img src="images/Logo.png" alt="">
+                                </div>
+                                <div class="header-menu">
+                                    <div id = "toggle-header-menu">
+                                        <ion-icon name = "menu-outline">
+                                        </ion-icon>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Classes</a></li>
+                                        <li><a href="#">Portfolio</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contacts</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class = "header-icon">
+                                    
+                                    <ul class = list-icon>
+                                        <li class = "iconhd search">                                        
+                                        
+                                        <button><i class="fa-solid fa-magnifying-glass" id = "icon"></i></button></li>
+                                        <li class = "iconhd" id = "icon">|</li>
+                                        <li class = "cart"><button><i class="fa-solid fa-basket-shopping" id = "icon"></i></button>
+                                            <span class = "item-numb">0</span>
+                                        </li>
+                                        <li class = "iconhd" id = "icon">|</li>
+                                        <li class = "iconhd"><button><i class="fa-solid fa-user" id="icon"></i></button>
+                                        </li>
+                                        <li class = "iconhd search">
+                                            <div class="container-search">
+                                                <input type="text" class = "input-search" placeholder="Search..." style="color: white;">
+                                                <i class="fa-solid fa-magnifying-glass" id = "icon"></i>
+                                            </div>    
+                                        </li>      
+                                    </ul>        
+                                </div>   
+                                 
+                            </div>
+                            
+
+                            <!-- banner -->
+                            <div class = "text-banner">
+                                <div class = "textbanner-title ">
+                                    <h1>Dumbbells Shop</h1>
+                                </div>
+                                <div class="textbanner-header ">
+                                    <h3>Best body fitness</h3>
+                                </div>
+                                <div class="textbanner-body " >
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    <br>Lorem Ipsum has been the industry's standard dummy text ever since the
+                                    <br>1500s, when an unknown printer</p>
+                                </div>
+                            <div class = "textbanner-footer">
+                                <button id="button">SHOP NOW</button>
+                            </div>
+                        </div>
+                        <div class = "shopping-cart">
+
+                            </div>
+                         </div>
+                        </div>
+                    </div> 
+                </div>
+        </header>
+        <section>
+            <div class="main">
+                <div class = "container">
+                    <div class = "main-list ">
+                        <div class="introduce">
+                            <div class = "list-intro">
+                                <div class = "intro-item-header">
+                                    <div class="intro-item">
+                                        <div class = "intro-item-img">
+                                            <img src="images/img.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="intro-item">
+                                       <div class = "intro-all">
+                                         <div class="intro-item-icon">
+                                            <img src="images/icon.png" alt="">
+                                        </div>
+                                        <div class="intro-item-title">
+                                            <h5>STRENGTH</h5>
+                                        </div>
+                                        <div class="intro-item-content">
+                                            <p>Lorem Ipsum is simply dummy text of the<br> printing and typesetting industry.</p>
+                                        </div>
+                                       </div>
+                                    </div>
+                                    <div class="intro-item">
+                                        <div class = "intro-item-img">
+                                            <a href=""><img src="images/img2.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="intro-item-footer">
+                                    <div class="intro-item">
+                                        <div class = "intro-all">
+                                            <div class="intro-item-icon-footer">
+                                                <img src="images/icon1.png" alt="">
+                                            </div>
+                                            <div class="intro-item-title">
+                                                <h5>DUMBBELLS</h5>
+                                            </div>
+                                            <div class="intro-item-content">
+                                                <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="intro-item">
+                                        <div class = "intro-item-img">
+                                            <a href=""><img src="images/img1.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="intro-item">
+                                        <div class = "intro-all">
+                                            <div class="intro-item-icon-footer2">
+                                                <img src="images/icon3.png" alt="">
+                                            </div>
+                                            <div class="intro-item-title">
+                                                <h5>POWER RACK &CAGES</h5>
+                                            </div>
+                                            <div class="intro-item-content">
+                                                <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <!-- product -->
+                    <div class = "menu-product">
+                        <div class = "list-menu">
+                            <button class="tablinks" onclick="openMenu(event, 'TopSellers')" id="defaultOpen">TOP SELLERS</button>
+                            <button class="tablinks" onclick="openMenu(event, 'FeaTured')">FEATURED</button>
+                            <button class="tablinks" onclick="openMenu(event, 'MostReviews')">MOST REVIEWS</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class = "tabcontent" id="TopSellers">
+                            <div class="product-list">
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">Body Champ Cardio</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$342.00</span>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart1" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap1.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">Body Solid GCEC340</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$214.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li>
+                                                <a class = "add-cart cart2" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap2.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">Bowflex BXE116 Elliptical</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$421.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li>
+                                                <a  class = "add-cart cart3" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap3.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">ETHOS GHD</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$152.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li>
+                                                <a  class = "add-cart cart4" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap4.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">AFG Pro 7.2AI Incline</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$252.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart5" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap5.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">Weight Bench</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$412.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart6" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap6.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">ProForm Hiit Trainer Lite 5.9</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$300.00</span>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li><a  class = "add-cart cart7" href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap7.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">Fitness Gear Pro</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$124.0</span>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart8" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "tabcontent" id="FeaTured">
+                            <div class="product-list">
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">Body Champ Cardio</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$342.00</span>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart9" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap1.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">Body Solid GCEC340</a>
+                                        </div>
+                                        <div class="price">
+                                            <span> $214.00</span>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart10" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap2.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">Bowflex BXE116 Elliptical</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$421.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart11" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div  class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap3.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">ETHOS GHD</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$152.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart12" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap4.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">AFG Pro 7.2AI Incline</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$252.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li>
+                                                <a  class = "add-cart cart13" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap5.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">Weight Bench</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$412.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart14" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap6.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">ProForm Hiit Trainer Lite 5.9</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$300.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart15" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap7.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">Fitness Gear Pro</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$124.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart16" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "tabcontent" id="MostReviews">
+                            <div class="product-list">
+                                
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap1.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">Body Solid GCEC340</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$214.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart17" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap2.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">Bowflex BXE116 Elliptical</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$421.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart18" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap3.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">ETHOS GHD</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$152.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart19" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap4.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">AFG Pro 7.2AI Incline</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$252.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart20" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap5.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">Weight Bench</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$412.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart21" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap6.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">ProForm Hiit Trainer Lite 5.9</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$300.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart22" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "product-item">
+                                    <div class="product-item-img">
+                                        <a href=""><img src="images/maytap7.png" alt=""></a>
+                                    </div>
+                                    <div class="product-item-name">
+                                        <div class="name">
+                                            <a href="">Fitness Gear Pro</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>$124.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon">
+                                        <ul>
+                                            <li >
+                                                <a class = "add-cart cart23" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                                            </li>
+                                            <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                            <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+
+    <!-- popup -->
+
+
+                        
+
+    <!-- aside -->
+                     <div class = "aside">
+                        
+                        <div class = " swiper mySwiper aside-header">
+                            <div class = "aside-header-title">
+                                <h2>See What They Said About Us</h2>
+                            </div>
+                            <div class="swiper-wrapper slideshow-aside">
+                                <div class = "swiper-slide mySlides fade" id = "defaultOpenn">
+                                    <div class="aside-header-img">
+                                        <a href=""><img src="images/avatar.png" alt=""></a>
+                                    </div>
+                                    <div class="aside-header-content">
+                                        <p>“Good services. I bought a bicycle with a wrong but they accepted free return for me <br> and exchange a new product for me.</p>
+                                    </div>
+                                    <div class="aside-header-user">
+                                        <h4>LINA</h4>
+                                    </div>
+                                    <div class="aside-header-message">
+                                        <p>Happy clients</p>
+                                    </div>
+                                </div>
+                                <div class = "swiper-slide mySlides fade">
+                                    <div class="aside-header-img">
+                                        <a href=""><img src="images/avatar.png" alt=""></a>
+                                    </div>
+                                    <div class="aside-header-content">
+                                        <p>“Good services. I bought a bicycle with a wrong but they accepted free return for me <br> and exchange a new product for me.</p>
+                                    </div>
+                                    <div class="aside-header-user">
+                                        <h4>SENA</h4>
+                                    </div>
+                                    <div class="aside-header-message">
+                                        <p>Happy clients</p>
+                                    </div>
+                                </div>
+                                <div class = "swiper-slide mySlides fade">
+                                    <div class="aside-header-img">
+                                        <a href=""><img src="images/avatar.png" alt=""></a>
+                                    </div>
+                                    <div class="aside-header-content">
+                                        <p>“Good services. I bought a bicycle with a wrong but they accepted free return for me <br> and exchange a new product for me.</p>
+                                    </div>
+                                    <div class="aside-header-user">
+                                        <h4>ALENA</h4>
+                                    </div>
+                                    <div class="aside-header-message">
+                                        <p>Happy clients</p>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                            <div class="swiper-pagination"></div> 
+                        </div>
+                        <div class = "aside-footer">
+                            <div class="brand-list">
+                                  
+                                    <img src="images/brand.png" alt="">
+                                    <img src="images/brand2.png" alt="">
+                                    <img src="images/brand3.png" alt="">
+                                    <img src="images/brand4.png" alt="">
+                                    <img src="images/brand5.png" alt="">
+                                    <img src="images/brand6.png" alt="">
+                                
+                            </div>
+                        </div>
+                </div>
+                 </div>
+                 
+            </div>
+        </section>
+
+        <footer>
+            <div class = "footer">
+                <div class = "container">
+                    <div class="footer-top">
+                    <div class = "footer-top-list">
+                        <div class = "top-logo">
+                            <a href=""><img src="images/Logo.png" alt=""></a>
+                        </div>
+                        <div class="top-content">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <br> industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+                        </div>
+                        <div class = "top-icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-google-plus-g"></i>
+                                <i class="fa-brands fa-youtube"></i></li>
+                        </div>
+                    </div>
+                <div class="footer-contacts">
+                    <div class = "contacts-list">
+                        <div class = "contacts">
+                            <div class = "contact-title">
+                                <a href=""><h4>CONTACT US</h4></a>
+                            </div>
+                            <div class = "info">
+                                    <span><i class="fa-solid fa-location-dot" id = "infor-tt"></i><p id = "info-tt">200 Lincoln Ave, Salinas, CA 93901</p></span>
+                                    <span><i class="fa-solid fa-phone-flip"></i><p id = "info-tt">023 32423 223</p></span>
+                                    <span><i class="fa-solid fa-envelope"></i><p id = "info-tt">gymax@example.com</p></span>
+                                    <span><i class="fa-solid fa-clock"></i><p id = "info-tt">9:00 - 20:00 All day</p></span>
+                            </div>
+                        </div>
+                        <div class = "account">
+                            <div class = "contact-title">
+                                <a href=""><h4>MY ACCOUNT</h4></a>
+                            </div>
+                            <div class = "info-account">
+                                <span>My account</span>
+                                <span>check out</span>
+                                <span>register</span>
+                                <span>Login</span>
+                            </div>
+                        </div>
+                        <div class = "information">
+                            <div class = "contact-title">
+                                <a href=""><h4>INFORMATION</h4></a>
+                            </div>
+                            <div class = "info-account">
+                                <span>About us</span>
+                                <span>Contact us</span>
+                                <span>Terms of user</span>
+                                <span>Privacy Policy</span>
+                            </div>
+                        </div>
+                        <div class = "quicklink">
+                            <div class = "contact-title">
+                                <a href=""><h4>QUICK LINK</h4></a>
+                            </div>
+                            <div class = "info-account">
+                                <span>New user</span>
+                                <span>Help center</span>
+                                <span>Report spam</span>
+                                <span>FAQs</span>
+                            </div>
+                        </div>
+                        </div>
+                            
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class = "footer-footer">
+                <p>Copyright © 2019 Gymax - Design by <a href="">ArrowHitech</a>- All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      var swiper3 = new Swiper(".mySwiper3", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+ 
+</body>
+</html
