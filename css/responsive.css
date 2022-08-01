@@ -203,7 +203,7 @@
 
     }
     .product-icon ul {
-        transform: translate(20%, -20%) scale(0.6);
+        transform: translate(20%, -17%) scale(0.7);
         opacity: 1;
         visibility: visible;
     }
@@ -346,7 +346,7 @@
     }
 
     .product-item-name a {
-        font-size: 10px;
+        font-size: 14px;
     }
     #button {
         width: 90px;
@@ -362,7 +362,7 @@
         margin-top: 12px;
     }
     .list-menu button{
-        font-size: 10px;
+        font-size: 14px;
     }
     .product-item {
         width: 175px;
@@ -375,33 +375,34 @@
         padding-bottom: 35px
     }
     .aside-header-title h2 {
-        font-size: 16px;
+        font-size: 20px;
     }
     .aside-header img {
         margin-bottom: 15px;
         margin-top: 25px;
-        width: 45px;
+        width: 65px;
     }
     .aside-header-content p{
-        font-size: 9px;
-        line-height: 12px;
+        font-size: 12px;
+        line-height: 18px;
     }
     .aside-header-user {
-        margin-top: -25px;
+        margin-top: -12px;
         margin-bottom: 6px;
     }
     .aside-header-user h4 {
-        font-size: 8px;
+        font-size: 14px;
     }
     .aside-header-message p{
-        font-size: 8px;
+        font-size: 12px;
     }
     .swiper {
-        height: 206px;
+        margin-top: 60px;
+        height: 300px;
     }
     .swiper-pagination .swiper-pagination-bullet{
-        width: 3px;
-        height: 3px;
+        width: 6px;
+        height: 6px;
         
     }
     .dot-dot-dot {
@@ -418,11 +419,11 @@
     }
 
     .aside-footer {
-        margin-top: 18px;
+        margin-top: 45px;
         padding-bottom: 20px;
     }
     .brand-list {
-        column-gap: 94px;
+        column-gap: 80px;
     }
     .top-logo a img {
         padding-top: 50px;
@@ -435,10 +436,10 @@
     }
     .top-icon {
         margin-top: 5px;
-        column-gap: 10px;
+        column-gap: 16px;
     }
     .top-icon i{
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .footer-top-list {
@@ -493,7 +494,7 @@
         padding-bottom: 0px;
     }
     .price span {
-        font-size: 10px;
+        font-size: 14px;
     }
     .shopping-cart {
         margin-left: -56px;
@@ -504,12 +505,7 @@
         margin-left: -45px;
         width: 100px;
     }
-    .footer-footer a {
-        font-size: 12px;
-    }
-    .footer-footer p {
-        font-size: 12px;
-    }
+
     .list-intro {
         height: auto;
     }
@@ -545,6 +541,10 @@
     .intro-item-icon-footer2 img {
         /* margin-top: 1px; */
         margin-bottom: 22px;
+    }
+    .footer-footer p {
+        width: 416px;
+        top: 5px;
     }
 }
 
@@ -619,8 +619,11 @@
         line-height: 16px;
         padding-bottom: 20px;
     }
+    .list-menu button {
+        font-size: 12px;
+    }
     .product-icon ul {
-    transform: translate(30%, -26%) scale(0.5);
+    transform: translate(30%, -23%) scale(0.6);
     }
     .intro-item-title h5 {
         margin-bottom: -7px;
@@ -636,6 +639,7 @@
         font-size: 13px;
         top: 5px;
     }
+
 
 }
 
@@ -672,7 +676,7 @@
         height: 0px;
     }
     .list-menu button {
-        font-size: 10px;
+        font-size: 11px;
     }
     .list-menu button {
         padding: 0px 10px 5px 10px;
@@ -686,10 +690,11 @@
     .product-item {
         padding-bottom: 0px;
         width: 100%;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05)
     }
     .product-item-name {
         text-align: center;
-        margin-top: 0px;
+        margin-top: 10px;
     }
     .product-item-name a{
         font-size: 14px;
@@ -761,7 +766,7 @@
         height: 1020px;
     }
     .product-icon ul {
-        transform: translate(-35%, -2%) scale(1.0);
+        transform: translate(12%, -2%) scale(1.0);
     }
     .header-icon {
         margin-left: 40px;
@@ -770,5 +775,7 @@
     .item-cart {
         column-gap: 1px;
     }
-
+    .aside-header-title h2 {
+        font-size: 19px;
+    }
 }
