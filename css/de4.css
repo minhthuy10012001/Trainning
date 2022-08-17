@@ -399,7 +399,10 @@ button.btn.btn-primary.add-cart {
     background: rgb(255, 255, 255);
     border: none;
     font-size: 14px;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
+
 #shop {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
     color: rgb(119, 119, 119);
