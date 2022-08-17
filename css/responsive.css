@@ -72,18 +72,24 @@
         width: 43px;
     }
     .shopping-cart{
-        margin-left: 450px;
-        transform: translate(10%, -10%) scale(0.8);
+      
+        transform: translate(-40%, -1%) scale(1.0);
     }
     .item-numb{
         right: 70px;
+    }
+    .product-item{
+        width: 220px;
+    }
+    .product-list{
+        column-gap: 13.5px;
     }
 
 }
 
 
 /* màn hình 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .all{
         max-width: 100%;
     }
@@ -133,7 +139,7 @@
         display: none;
         width: 150px;
         text-align: center;
-        background-color: rgb(129 134 135 / 38%);
+        background-color: #f5f5f5;
         position: absolute;
         border-radius: 14px;
         left: 30px;
@@ -145,6 +151,7 @@
         font-weight: bold;
         display: inline-flex;
         margin-bottom: 5px;
+        color: rgb(64 58 58);
     }
     .intro-all {
         margin-top: 5px;
@@ -196,14 +203,14 @@
     }
 
     .product-item {
-        width: 200px;
+        width: 220px;
     }
     .top-content p {
         font-size: 13px;
 
     }
     .product-icon ul {
-        transform: translate(50%, -14%) scale(0.8);
+        transform: translate(20%, -10%) scale(0.85);
         opacity: 1;
         visibility: visible;
     }
@@ -218,40 +225,44 @@
     }
     .shopping-cart {
         border: 3px solid white;
-        margin-left: 235px;
-        margin-top: -250px;
-        background-color: #f5f5f5ed;
+        margin-left: 524px;
+        margin-top: -240px;
+        background-color: #f5f5f5;
+        width: 306px
     }
-    .img-cart img {
-        width: 85px;
-        border-radius: 15px;
-        height: 55px;
+    .cart-row {
+        position: relative;
+        display: block;
     }
-    .name-pr {
-        display: flex;
-        flex-direction: column;
-        color: black;
-        font-size: 12px;
-        font-family: 'Poppins';
-        margin-top: 5px;
+    span.cart-item-title {
+        width: 250px;
+        margin-top: 0px;
+    }
+    span.cart-price.cart-column {
+        position: absolute;
+        left: 96px;
+        top: 20px;
         width: 130px;
     }
-    .quantity {
-        color: black;
+    input.cart-quantity-input {
+        position: absolute;
+        width: 30px;
+        left: 96px;
+        top: 75px;
+    }
+    button.btn.btn-danger {
         font-size: 20px;
+        position: absolute;
+        right: 5px;
+        bottom: 60px;
+        border: none;
     }
-    .total{
-        margin-top: 23px;
-        font-size: 14px;
-        color: black;
-    }
-    .basketTotalContainer {
-        color: black;
+    .cart-total {
+        margin-right: 5px;
 
     }
-    .delete {
-        margin-top:22px;
-        color: #161515;
+    button.btn.btn-primary.btn-purchase {
+        margin-left: 36%;
     }
     .item-numb{
         right: 70px;
@@ -270,7 +281,82 @@
 }
 
 /* màn hình 425px */
-@media screen and (max-width: 425px){
+@media screen and (max-width: 426px){
+    input.cart-quantity-input {
+        height: 10px;
+        position: absolute;
+        width: 30px;
+        left: 71px;
+        top: 55px;
+    }
+    button.btn.btn-danger {
+        font-size: 14px; 
+        position: absolute;
+        right: 0px;
+        bottom: 50px;
+        border: none;
+    }
+    strong.cart-total-title {
+        font-size: 12px;
+        
+    }
+    span.cart-total-price {
+        font-size: 12px;
+        
+    }
+
+    button.btn.btn-primary.btn-purchase {
+        margin-top: 20px;
+        margin-left: 34%;
+        width: 65px;
+        height: 24px;
+        font-size: 12px;
+    }
+    input.input-search {
+        margin-left: -45px;
+        width: 100px;
+    }
+
+    .list-intro {
+        height: auto;
+    }
+    .intro-item-header {
+        display: block;
+    }
+    .intro-item-footer {
+        display: block;
+    }
+    .intro-item {
+        width: 100%;
+    }
+    .intro-all{
+        margin-top: 30px;
+        padding-bottom: 40px;
+    }
+    .intro-all {
+        transform: translate(0%, 0%) scale(1.0);
+    }
+    .intro-item-content {
+        font-size: 14px;
+    }
+    .intro-item-icon img {
+        margin-bottom: 20px;
+    }
+    .intro-item-title {
+        margin-bottom: 26px;
+    }
+    .intro-item-icon-footer img {
+        
+        margin-bottom: 22px;
+    }
+    .intro-item-icon-footer2 img {
+        
+        margin-bottom: 22px;
+    }
+    .footer-footer p {
+        width: 416px;
+        top: 5px;
+    } 
     .all{
         max-width: 100%;
     }
@@ -297,10 +383,7 @@
     .main-list{
         height: 1300px;
     }
-    .header-menu {
-        width: 98px;
-        margin-top: -3px;
-    }
+
     .header-logo {
         width: 120px;
         margin-top: 10px;
@@ -316,7 +399,7 @@
         column-gap: 12px;
     }
     .header-icon{
-        margin-left: -30%;
+        margin-left: -12%;
     }
     .header-menu #toggle-header-menu {
         padding-top: 0px;
@@ -485,72 +568,45 @@
     }
 
     .tabcontent {
-        margin-left: -18px;
         padding-top: 0px;
     }
     .product-list {
+        column-gap: 10.5px;
         row-gap: 10px;
     }
     .product-item {
+        width: 186px;
         padding-bottom: 0px;
     }
     .price span {
         font-size: 14px;
     }
     .shopping-cart {
-        margin-left: -56px;
-        /* transform: translate(-40%, 10%) scale(0.5); */
-        margin-top: -155px;
+        width: 240px;
+        position: relative;
+        right: 290px;
+        top: 90px;
     }
-    input.input-search {
-        margin-left: -45px;
-        width: 100px;
+    .cart-item-image {
+        width: 60px;
+        height: 60px;
     }
-
-    .list-intro {
-        height: auto;
+    span.cart-price.cart-column {
+        left: 71px;
+        font-size: 12px;
+        top: 12px;
+        /* font-weight: bold; */
     }
-    .intro-item-header {
-        display: block;
-    }
-    .intro-item-footer {
-        display: block;
-    }
-    .intro-item {
-        width: 100%;
-    }
-    .intro-all{
-        margin-top: 30px;
-        padding-bottom: 40px;
-    }
-    .intro-all {
-        transform: translate(0%, 0%) scale(1.0);
-    }
-    .intro-item-content {
-        font-size: 14px;
-    }
-    .intro-item-icon img {
-        margin-bottom: 20px;
-    }
-    .intro-item-title {
-        margin-bottom: 26px;
-    }
-    .intro-item-icon-footer img {
-        /* margin-top: 1px; */
-        margin-bottom: 22px;
-    }
-    .intro-item-icon-footer2 img {
-        /* margin-top: 1px; */
-        margin-bottom: 22px;
-    }
-    .footer-footer p {
-        width: 416px;
-        top: 5px;
+    span.cart-item-title {
+        font-size: 12px;
+        margin-top: 5px;
     }
 }
+ 
+
 
 /* màn hình 375px */
-@media screen and (max-width: 375px){
+@media screen and (max-width: 376px){
     .header-main {
         width: 100%;
         column-gap: 7px;
@@ -570,7 +626,7 @@
         margin-top: 0px;
     }
     .header-icon {
-        margin-left: 30px;
+        margin-left: -23px;
         margin-top: -12px;
     }
     .header-menu ul {
@@ -578,8 +634,8 @@
         font-size: 14px;
     }
     .shopping-cart {
-        margin-left: -84px;
-        margin-top: -185px
+        margin-top: -270px;
+        left: -340px;
     }
     .header-menu #toggle-header-menu {
         margin-left: 125px;
@@ -589,9 +645,10 @@
     }
     .product-item {
         padding-bottom: 0px;
-        width: 152px;
+        width: 160px;
     }
     .product-list {
+        column-gap: 17.5px;
         row-gap: 15px;
     }
     .product-item-name a {
@@ -624,7 +681,7 @@
         font-size: 12px;
     }
     .product-icon ul {
-        transform: translate(60%, -23%) scale(0.68);
+        transform: translate(30%, -20%) scale(0.68);
     }
     .intro-item-title h5 {
         margin-bottom: -7px;
@@ -640,7 +697,6 @@
         font-size: 13px;
         top: 5px;
     }
-
 }
 
 
@@ -740,11 +796,6 @@
     .aside-header-message p {
         margin-top: -5px;
     }
-    .shopping-cart {
-        width: 330px;
-        margin-left: -66px;
-        margin-top: -160px;
-    }
     input.input-search {
         width: 75px;
         height: 5px;
@@ -769,7 +820,7 @@
         transform: translate(12%, -2%) scale(1.0);
     }
     .header-icon {
-        margin-left: 40px;
+        margin-left: -12px;
         margin-top: -12px;
     }
     .item-cart {
@@ -782,5 +833,9 @@
         margin-top: 15px;
         margin-left: 0px;
     }
+    .shopping-cart {
+        margin-top: -240px;
+        left: -380px;
+    }
 
-}
+} 
