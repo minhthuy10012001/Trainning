@@ -13,6 +13,9 @@
     .img{
         max-width: 100%;
     }
+    .header-logo {
+        margin-top: 2px;
+    }
     .header-main{
         width: 100%;
         column-gap: 72px;
@@ -21,6 +24,7 @@
         width: 525px;
     }
     .header-icon{
+        left: 20px;
         padding-left: 0%;
     }
     .main-list{
@@ -90,6 +94,9 @@
         right: 0px;
         top: 10px;
     }
+    .contacts {
+        width: 390px;
+    }
 
 }
 
@@ -105,6 +112,9 @@
     .container{
         width: 96%;
         
+    }
+    .contacts {
+        width: 565px;
     }
     .header-banner{
         background-size: 200% 100%;
@@ -175,7 +185,8 @@
         margin-bottom: 10px;
     }
     .intro-item-content {
-        margin-left: -21px;
+        width: 246px;
+        margin-left: 0px;
         font-size: 12px;
         margin-top: -12px
     }
@@ -195,7 +206,9 @@
         width: 97px;
     }
 
-
+    .top-logo img {
+        padding-top: 80px;
+    }
 
     .product-item {
         width: 220px;
@@ -276,6 +289,9 @@
     .product-list {
         column-gap: 38.5px;
     }
+    .aside-header-content {
+        width: 674px;
+    }
 }
 
 /* màn hình 425px */
@@ -286,6 +302,18 @@
         width: 30px;
         left: 71px;
         top: 55px;
+    }
+    .aside-header-content {
+        width: 400px;
+    }
+    .top-logo img {
+        padding-top: 70px;
+    }
+    .contacts {
+        width: 270px;
+    }
+    .top-content {
+        width: 410px;
     }
     button.btn.btn-danger {
         font-size: 14px; 
@@ -499,8 +527,14 @@
     }
 
     .aside-footer {
-        margin-top: 40px;
-        padding-bottom: 20px;
+        margin-top: 30px;
+        
+    }
+    .contacts {
+        padding-bottom: 18px;
+    }
+    .account {
+        padding-bottom: 36px;
     }
     .brand-list {
         row-gap: 36px;
@@ -542,11 +576,9 @@
     .contact-title {
         padding-bottom: 12px;
     }
-    .account {
-        padding-bottom: 20px;
-    }
+
     .information{
-        padding-bottom: 20px;
+        padding-bottom: 36px;
     }
     .info{
         margin-top: -5px;
@@ -617,6 +649,9 @@
         width: 100%;
         column-gap: 7px;
     }
+    .aside-header-content {
+        width: 364px;
+    }
     .header {
         height: 80px;
     }
@@ -627,6 +662,12 @@
     .header-menu {
         margin-left: -128px;
         margin-top: -15px;
+    }
+    .top-content {
+        width: 360px;
+    }
+    .top-content {
+        width: 300px;
     }
     .header-logo {
         margin-top: 0px;
@@ -888,5 +929,8 @@
     }
     .aside-header-content p {
         font-size: 13px;
+    }
+    .aside-header-content {
+        width: 270px;
     }
 } 
