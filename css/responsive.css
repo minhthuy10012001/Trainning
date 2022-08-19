@@ -18,7 +18,7 @@
         column-gap: 72px;
     }
     .text-banner{
-        width: 100%;
+        width: 525px;
     }
     .header-icon{
         padding-left: 0%;
@@ -57,7 +57,8 @@
         margin-bottom: 8px;
     }
     .intro-item-content {
-        font-size: 12px;
+        margin-left: 8px;
+        font-size: 14px;
         margin-top: -4px;
         line-height: 18px;
     }
@@ -84,6 +85,11 @@
     .product-list{
         column-gap: 13.5px;
     }
+    .product-icon ul {
+
+        right: 0px;
+        top: 10px;
+    }
 
 }
 
@@ -97,7 +103,7 @@
         width: 100%;
     }
     .container{
-        width: 90%;
+        width: 96%;
         
     }
     .header-banner{
@@ -113,15 +119,11 @@
         position: relative;
     }
     .text-banner{
-        width: 100%;
+        width: 530px;
         margin-top:-45px;
     }
     .header-icon{
-        left: 68%;
-    }
-    .main-list{
-        width: 100%;
-        height: 100%;
+        left: 70%;
     }
     .header-menu{
         position: relative;
@@ -153,14 +155,18 @@
         margin-bottom: 5px;
         color: rgb(64 58 58);
     }
+    .header-menu ul li a:hover{
+        color: rgb(64 58 58);
+        text-decoration: underline;
+    }
     .intro-all {
         margin-top: 5px;
     }
     .intro-all {
-        transform: translate(0%, 0%) scale(0.9);
+        transform: translate(0%, 0%) scale(0.97);
     }
     .list-intro {
-        height: 295px;
+        height: 315px;
     }
     .intro-item-header {
         margin-bottom: -4px;
@@ -169,7 +175,8 @@
         margin-bottom: 10px;
     }
     .intro-item-content {
-        font-size: 10px;
+        margin-left: -21px;
+        font-size: 12px;
         margin-top: -12px
     }
     .intro-item-icon-footer img {
@@ -180,27 +187,15 @@
         margin-top: -2px;
         margin-bottom: 12px;
     }
-    .brand-list{
-        column-gap: 130px;
-        row-gap: 40px;
-        margin-left: 6px;
+    .brand-list {
+        column-gap: 30px;
+        margin-left: -20px;
     }
-    .aside-header-content a{
-        font-size: 14px;
+    .brand-list img {
+        width: 97px;
     }
-    .aside-header-title h2{
-        font-size: 32px;
-    }
-    .textbanner-header h3 {
-        font-size: 32px;
-    }
-    .textbanner-title h1 {
-        font-size: 50px;
-    }
-    .textbanner-body {
-        margin-top: 20px;
-        font-size: 12px;
-    }
+
+
 
     .product-item {
         width: 220px;
@@ -210,7 +205,7 @@
 
     }
     .product-icon ul {
-        transform: translate(20%, -10%) scale(0.85);
+        transform: translate(-10%, -8%) scale(0.85);
         opacity: 1;
         visibility: visible;
     }
@@ -225,8 +220,8 @@
     }
     .shopping-cart {
         border: 3px solid white;
-        margin-left: 524px;
-        margin-top: -240px;
+        margin-left: 542px;
+        margin-top: -265px;
         background-color: #f5f5f5;
         width: 306px
     }
@@ -277,6 +272,9 @@
     }
     input.input-search {
         margin-left: -60px;
+    }
+    .product-list {
+        column-gap: 38.5px;
     }
 }
 
@@ -338,12 +336,15 @@
     }
     .intro-item-content {
         font-size: 14px;
+        margin-left: 58px;
+        line-height: 24px;
     }
     .intro-item-icon img {
         margin-bottom: 20px;
     }
     .intro-item-title {
-        margin-bottom: 26px;
+        margin-bottom: 40px;
+        margin-top: 24px;
     }
     .intro-item-icon-footer img {
         
@@ -368,13 +369,11 @@
         
     }
     .text-banner {
-        top: 185px;
+        top: 115px;
+        width: 375px;
     }
     .textbanner-footer {
         margin-top: 40px;
-    }
-    .container{
-        max-width: 90%;
     }
     .header-main {
         width: 100%;
@@ -417,24 +416,22 @@
         color: #343434d1;
     }
     .textbanner-title h1 {
-        font-size: 36px;
+        font-size: 38px;
     }
     .textbanner-header h3 {
-        font-size: 24px;
+        font-size: 26px;
     }
     .textbanner-body {
         margin-top: 20px;
-        font-size: 10px;
-        line-height: 14px;
+        font-size: 13px;
+        line-height: 18px;
     }
 
     .product-item-name a {
         font-size: 14px;
     }
     #button {
-        width: 90px;
-        height: 32px;
-        font-size: 8px;
+       transform: translate(-17px, 0px) scale(0.8);
     }
     .textbanner-footer a{
         font-size: 8px;
@@ -442,7 +439,7 @@
 
 
     .menu-product {
-        margin-top: 12px;
+        margin-top: 140px;
     }
     .list-menu button{
         font-size: 14px;
@@ -458,26 +455,26 @@
         padding-bottom: 35px
     }
     .aside-header-title h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
     .aside-header img {
-        margin-bottom: 15px;
+        margin-bottom: 25px;
         margin-top: 25px;
         width: 65px;
     }
     .aside-header-content p{
-        font-size: 12px;
+        font-size: 14px;
         line-height: 18px;
     }
     .aside-header-user {
-        margin-top: -12px;
-        margin-bottom: 6px;
+        margin-top: -22px;
+        margin-bottom: 2px;
     }
     .aside-header-user h4 {
-        font-size: 14px;
+        font-size: 16px;
     }
     .aside-header-message p{
-        font-size: 12px;
+        font-size: 14px;
     }
     .swiper {
         margin-top: 60px;
@@ -502,23 +499,27 @@
     }
 
     .aside-footer {
-        margin-top: 45px;
+        margin-top: 40px;
         padding-bottom: 20px;
     }
     .brand-list {
-        column-gap: 80px;
+        row-gap: 36px;
+        column-gap: 54px;
+    }
+    .brand-list img{
+        width: 100px;
     }
     .top-logo a img {
-        padding-top: 50px;
-
+        margin-top: 20px;
+        padding-top: 70px;
     }
-    .top-content p{
-        font-size: 12px;
-        line-height: 16px;
+    .top-content p {
+        font-size: 14px;
+        line-height: 20px;
         padding-bottom: 20px;
     }
     .top-icon {
-        margin-top: 5px;
+        margin-top: 30px;
         column-gap: 25px;
     }
     .top-icon i{
@@ -526,7 +527,7 @@
     }
 
     .footer-top-list {
-        padding-bottom: 30px;
+        padding-bottom: 45px;
     }
     .footer-contacts {
         margin-top: 36px;
@@ -575,7 +576,7 @@
         row-gap: 10px;
     }
     .product-item {
-        width: 186px;
+        width: 198px;
         padding-bottom: 0px;
     }
     .price span {
@@ -584,8 +585,8 @@
     .shopping-cart {
         width: 240px;
         position: relative;
-        right: 290px;
-        top: 90px;
+        right: 296px;
+        top: 66px;
     }
     .cart-item-image {
         width: 60px;
@@ -601,6 +602,11 @@
         font-size: 12px;
         margin-top: 5px;
     }
+    .intro-item-img img{
+        width: 408px;
+        max-width: 100%;
+    }
+
 }
  
 
@@ -634,7 +640,7 @@
         font-size: 14px;
     }
     .shopping-cart {
-        margin-top: -270px;
+        margin-top: -275px;
         left: -340px;
     }
     .header-menu #toggle-header-menu {
@@ -645,7 +651,7 @@
     }
     .product-item {
         padding-bottom: 0px;
-        width: 160px;
+        width: 170px;
     }
     .product-list {
         column-gap: 17.5px;
@@ -661,16 +667,11 @@
         padding-top: 0px;
     }
     .brand-list {
-        column-gap: 40px;
+        column-gap: 30px;
     }
     .aside-header {
         padding-top: 38px;
         padding-bottom: 30px;
-    }
-
-    .footer-footer p {
-        width: 370px;
-        margin-top: -3px;
     }
     .top-content p {
         font-size: 12px;
@@ -678,24 +679,31 @@
         padding-bottom: 20px;
     }
     .list-menu button {
-        font-size: 12px;
+        font-size: 13px;
+    }
+    .intro-item-content {
+        font-size: 14px;
+        margin-left: 24px;
     }
     .product-icon ul {
-        transform: translate(30%, -20%) scale(0.68);
+        transform: translate(5%, -18%) scale(0.68);
     }
     .intro-item-title h5 {
         margin-bottom: -7px;
     }
-    .price span {
-        font-size: 11px;
-    }
+
     .footer-footer a {
-        font-size: 13px;
+        font-size: 14px;
         
     }
     .footer-footer p {
-        font-size: 13px;
+        font-size: 14px;
         top: 5px;
+        left: 16px;
+        width: 345px;
+    }
+    .text-banner {
+        width: 340px;
     }
 }
 
@@ -732,7 +740,7 @@
         height: 0px;
     }
     .list-menu button {
-        font-size: 11.5px;
+        font-size: 12px;
     }
     .list-menu button {
         padding: 0px 10px 5px 10px;
@@ -782,12 +790,13 @@
     .footer-footer p {
         width: 320px;
         margin-top: -3px;
+        left: 0px;
     }
     .top-content p {
-        font-size: 10px;
+        font-size: 14px;
     }
     .brand-list img{
-        width: 95px;
+        width: 130px;
     }
     .brand-list {
         column-gap: 40px;
@@ -802,22 +811,32 @@
         margin-top: -1px
     }
     .text-banner {
-        top: 150px;
+        width: 290px;
+        top: 120px;
     }
     .textbanner-title h1 {
         font-size: 32px;
+        margin-left: -2px;
     }
+    .textbanner-header h3 {
+        margin-left: -2px;
+        font-size: 26px;
+    }
+
     .textbanner-body {
-        font-size: 7.5px;
+        font-size: 13px;
+        line-height: 16px;
+        margin-top: 10px;
     }
     .introduce {
-        top: -215px;
+        top: -145px;
+        height: 1150px;
     }
     .main-list {
-        height: 1020px;
+        height: 940px;
     }
     .product-icon ul {
-        transform: translate(12%, -2%) scale(1.0);
+        transform: translate(-6%, -2%) scale(1.0);
     }
     .header-icon {
         margin-left: -12px;
@@ -834,8 +853,40 @@
         margin-left: 0px;
     }
     .shopping-cart {
-        margin-top: -240px;
-        left: -380px;
+        margin-top: -254px;
+        left: -395px;
     }
-
+    .textbanner-footer {
+        margin-top: 30px;
+    }
+    .container {
+        width: 94%;
+    }
+    .top-icon {
+        margin-top: 18px;
+        column-gap: 25px;
+    }
+    .intro-all {
+        margin-top: 12px;
+        padding-bottom: 40px;
+    }
+    .intro-item-content {
+        margin-bottom: -10px;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .intro-item-title {
+        margin-bottom: 16px;
+        margin-top: -12px;
+    }
+    .intro-item-icon-footer img {
+        margin-bottom: 24px;
+        margin-top: 24px;
+    }
+    .menu-product {
+        margin-top: 50px;
+    }
+    .aside-header-content p {
+        font-size: 13px;
+    }
 } 
