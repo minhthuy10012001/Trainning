@@ -274,7 +274,9 @@ ul.list-icon {
     line-height: 24px;
     color: #898989;
     width: 290px;
-    margin-left: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .list-menu{

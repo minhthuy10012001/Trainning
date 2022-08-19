@@ -61,7 +61,6 @@
         margin-bottom: 8px;
     }
     .intro-item-content {
-        margin-left: 8px;
         font-size: 14px;
         margin-top: -4px;
         line-height: 18px;
@@ -186,8 +185,7 @@
     }
     .intro-item-content {
         width: 246px;
-        margin-left: 0px;
-        font-size: 12px;
+        font-size: 13px;
         margin-top: -12px
     }
     .intro-item-icon-footer img {
@@ -226,7 +224,7 @@
         font-size: 16px;
     }
     .aside-footer {
-        margin-top: 65px;
+        margin-top: 45px;
     }
     .aside {
         margin-top: 50px;
@@ -292,6 +290,9 @@
     .aside-header-content {
         width: 674px;
     }
+    .footer-contacts {
+        margin-top: 55px;
+    }
 }
 
 /* màn hình 425px */
@@ -307,7 +308,7 @@
         width: 400px;
     }
     .top-logo img {
-        padding-top: 70px;
+        padding-top: 60px;
     }
     .contacts {
         width: 270px;
@@ -363,11 +364,16 @@
         transform: translate(0%, 0%) scale(1.0);
     }
     .intro-item-content {
-        font-size: 14px;
-        margin-left: 58px;
+        width: 95%;
+        font-size: 16px;
         line-height: 24px;
     }
+    .intro-item-title h5 {
+        font-size: 22px;
+        margin-bottom: -20px;
+    }
     .intro-item-icon img {
+        width: 14%;
         margin-bottom: 20px;
     }
     .intro-item-title {
@@ -375,11 +381,11 @@
         margin-top: 24px;
     }
     .intro-item-icon-footer img {
-        
+        width: 18%;
         margin-bottom: 22px;
     }
     .intro-item-icon-footer2 img {
-        
+        width: 14%;
         margin-bottom: 22px;
     }
     .footer-footer p {
@@ -464,13 +470,16 @@
     .textbanner-footer a{
         font-size: 8px;
     }
-
+    .product-item-name {
+        margin-left: 10px;
+        margin-top: 22px;
+    }
 
     .menu-product {
-        margin-top: 140px;
+        margin-top: 175px;
     }
     .list-menu button{
-        font-size: 14px;
+        font-size: 16px;
     }
     .product-item {
         width: 175px;
@@ -553,7 +562,7 @@
         padding-bottom: 20px;
     }
     .top-icon {
-        margin-top: 30px;
+        margin-top: 10px;
         column-gap: 25px;
     }
     .top-icon i{
@@ -580,9 +589,6 @@
     .information{
         padding-bottom: 36px;
     }
-    .info{
-        margin-top: -5px;
-    }
     .info a{
         font-size: 8px;
     }
@@ -601,15 +607,15 @@
     }
 
     .tabcontent {
-        padding-top: 0px;
+        padding-top: 20px;
     }
     .product-list {
         column-gap: 10.5px;
-        row-gap: 10px;
+        row-gap: 20px;
     }
     .product-item {
         width: 198px;
-        padding-bottom: 0px;
+        padding-bottom: 10px;
     }
     .price span {
         font-size: 14px;
@@ -691,21 +697,35 @@
         height: 1200px;
     }
     .product-item {
-        padding-bottom: 0px;
-        width: 170px;
+        padding-bottom: 15px;
+        width: 359px;
+        box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+    }
+    .product-item-img {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
     .product-list {
-        column-gap: 17.5px;
-        row-gap: 15px;
+        row-gap: 30px;
     }
     .product-item-name a {
         font-size: 11px;
     }
     .product-item-name {
-        margin-top: 10px;
+        text-align: center;
+        margin-top: 25px;
+    }
+    .price span {
+        font-size: 18px;
+    }
+    .name span {
+        font-size: 18px;
     }
     .tabcontent {
-        padding-top: 0px;
+        padding-top: 20px;
     }
     .brand-list {
         column-gap: 30px;
@@ -720,14 +740,18 @@
         padding-bottom: 20px;
     }
     .list-menu button {
-        font-size: 13px;
+        font-size: 13.8px;
+    }
+    .intro-item-title {
+        margin-bottom: 31px;
+  
     }
     .intro-item-content {
-        font-size: 14px;
-        margin-left: 24px;
+        font-size: 16px;
+        
     }
     .product-icon ul {
-        transform: translate(5%, -18%) scale(0.68);
+        transform: translate(-25%, 15%) scale(1.2);
     }
     .intro-item-title h5 {
         margin-bottom: -7px;
@@ -792,20 +816,13 @@
     .product-list {
         column-gap: 20px;
     }
-    .product-item {
-        padding-bottom: 15px;
-        width: 100%;
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05)
-    }
+
     .product-item-name {
         text-align: center;
         margin-top: 10px;
     }
-    .product-item-name a{
-        font-size: 14px;
-    }
     .price span {
-        font-size: 14px;
+        font-size: 18px;
     }
     .aside-header-content a {
         font-size: 6px;
@@ -871,7 +888,7 @@
     }
     .introduce {
         top: -145px;
-        height: 1150px;
+        height: 1180px;
     }
     .main-list {
         height: 940px;
@@ -890,7 +907,7 @@
         font-size: 19px;
     }
     .tabcontent {
-        margin-top: 15px;
+        margin-top: -1px;
         margin-left: 0px;
     }
     .shopping-cart {
@@ -917,7 +934,7 @@
         margin-left: 5px;
     }
     .intro-item-title {
-        margin-bottom: 16px;
+        margin-bottom: 24px;
         margin-top: -12px;
     }
     .intro-item-icon-footer img {
@@ -925,12 +942,15 @@
         margin-top: 24px;
     }
     .menu-product {
-        margin-top: 50px;
+        margin-top: 70px;
     }
     .aside-header-content p {
         font-size: 13px;
     }
     .aside-header-content {
         width: 270px;
+    }
+    .footer-top-list {
+        padding-bottom: 40px;
     }
 } 
