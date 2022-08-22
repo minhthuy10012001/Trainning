@@ -714,6 +714,7 @@ li#content {
     border-radius: 16px;
     padding: 8px;
     display: none;
+    z-index: 10;
 }
 .cart-items{
     border-bottom: 1px solid #00000036;
@@ -792,14 +793,16 @@ span.cart-total-price {
     font-family: 'Poppins';
 }
 button.btn.btn-primary.btn-purchase {
+    display: block;
     margin-top: 40px;
     width: 100px;
     height: 35px;
     font-size: 16px;
-    margin-left: 42%;
+    margin-left: auto;
     font-weight: bold;
     font-family: 'Poppins';
     color: rgba(0, 0, 0, 0.836);
+    margin-right: auto;
 }
 
 /* cart */
