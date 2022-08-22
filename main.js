@@ -90,54 +90,60 @@ let products = [
     img: './images/maytap.png',
     name: 'Body Champ Cardio',
     price: 342,
-    inCart: 0
+    inCart: 0,
+    count: 1
   },
   {
   
     img: './images/maytap1.png',
     name: 'Body Solid GCEC340',
     price: 214,
-    inCart: 0
+    inCart: 0,
+    count: 1
   },
   {
     img: './images/maytap2.png',
     name: 'Bowflex BXE116 Elliptical',
     price: 421,
-    inCart: 0
+    inCart: 0,
+    count: 1
   },
   {
     img: './images/maytap3.png',
     name: 'ETHOS GHD',
     price: 152,
-    inCart: 0
+    inCart: 0,
+    count: 1
   },
   {
     img: './images/maytap4.png',
     name: 'AFG Pro 7.2AI Incline',
     price: 252,
-    inCart: 0
+    inCart: 0,
+    count: 1
   },
   {
     img: './images/maytap5.png',
     name: 'Weight Bench',
     price: 412,
-    inCart: 0
+    inCart: 0,
+    count: 1
   },
   {
     img: './images/maytap6.png',
     name: 'ProForm Hiit Trainer Lite 5.9',
     price: 300,
-    inCart: 0
+    inCart: 0,
+    count: 1
   },
   {
     img: './images/maytap7.png',
     name: 'Fitness Gear Pro',
     price: 124,
-    inCart: 0
+    inCart: 0,
+    count: 1
   }
 ];
-
-
 
 if(document.readyState == 'loading'){
   document.addEventListener('DOMContentLoaded', ready);
@@ -166,12 +172,14 @@ function ready(){
     var button = addToCartButtons[i];
     button.addEventListener('click', addToCartClicked)
   }
+
 }
 function removeCartItem(event){
   var buttonClicked = event.target;
   console.log(buttonClicked.parentElement.parentElement.parentElement);
   buttonClicked.parentElement.parentElement.parentElement.remove();
   updateCartTotal();
+  updateNumberCart();
 }
 function quantityChanged(event){
   var input = event.target;
@@ -188,8 +196,8 @@ function addToCartClicked(event) {
   var price = shopItem.getElementsByClassName('price')[0].innerText
   var imageSrc = shopItem.getElementsByClassName('product-item-img')[0].src
   addItemToCart(title, price, imageSrc)
-  updateCartTotal()
-  // console.log(imageSrc)
+  updateCartTotal();
+
 }
 function addItemToCart(title, price, imageSrc){
   var cartRow = document.createElement('div');
@@ -219,8 +227,6 @@ function addItemToCart(title, price, imageSrc){
   cartItems.append(cartRow);
   cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem);
   cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged);
-
-  
 }
 
 function updateCartTotal(){
@@ -235,92 +241,18 @@ function updateCartTotal(){
     var quantity = quantityElement.value
     console.log(quantityElement);
     total = total + (price * quantity);
+    
   }
   total = Math.round(total * 100) / 100;
   document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total + '.00';
+  document.getElementsByClassName('item-numb')[0].innerText = total + '.00$';
+
+  
 }
 
 
 
 
-// function randomId() {
-//   return Math.floor(Math.random() * 100000);
-// }
-
-
-// let carts = document.querySelectorAll('.add-cart');
-// for(let i = 0; i< carts.length;i++)
-// {
-//   carts[i].addEventListener('click', () =>{
-
-//     cartNumbers(products[i]);
-//     totalCost(products[i]);
-//   })
-// }
-
-// function onLoadCartNumbers(){
-//   let productNumbers = localStorage.getItem('cartNumbers');
-//   if(productNumbers){
-//     document.querySelector('.item-numb').textContent = productNumbers;
-//   }
-// }
-
-// function cartNumbers(product){
-  
-//   let productNumbers = localStorage.getItem('cartNumbers');
-
-//   productNumbers = parseInt(productNumbers);
-//   if(productNumbers)
-//   {
-//     localStorage.setItem('cartNumbers', productNumbers + 1);
-//     document.querySelector('.item-numb').textContent = productNumbers + 1;
-
-//   }
-//   else{
-//     localStorage.setItem('cartNumbers', 1);
-//     document.querySelector('.item-numb').textContent = 1;
-//   }
-//  setItems(product);
-// }
-
-
-// function setItems(product)
-// {
-//   let cartItems = localStorage.getItem("productsInCart");
-//   cartItems = JSON.parse(cartItems);
-
-//   if(cartItems != null)
-//   {
-//     if(cartItems[product.name] === undefined){
-//       cartItems = {
-//         ...cartItems,
-//         [product.name]: product
-//       }
-//     }
-    
-//     cartItems[product.name].inCart += 1;
-//   }
-//   else{
-//     product.inCart = 1;
-//     cartItems = {
-//       [product.name]: product
-//     }
-//   }
-//   localStorage.setItem('productsInCart', JSON.stringify(cartItems));
-// }
-
-// function totalCost(product){
-//   let cartCost = localStorage.getItem("totalCost");
-
-//   if(cartCost != null)
-//   {
-//     cartCost.parseInt(cartCost);
-//     localStorage.setItem('totalCost', cartCost + product * price);
-//   }
-//   else{
-//     localStorage.setItem('totalCost', product * price);
-//   }
-// }
 
 
 
