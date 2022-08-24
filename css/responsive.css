@@ -73,14 +73,14 @@ image{
 
 /* màn hình 1024 */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
 
     .container{
         width: 90%;
         
     }
     .header-logo {
-        margin-top: 2px;
+        margin-top: 0px;
     }
     .header-main{
         column-gap: 50px;
@@ -106,9 +106,6 @@ image{
     .intro-all {
         margin-top: 24px;
     }
-    /* .list-intro{
-        height: 394px;
-    } */
     .intro-item-icon img{
         margin-bottom: 16px;
         width: 43px
@@ -604,7 +601,7 @@ image{
     }
 
     .product-item-name a {
-        font-size: 14px;
+        font-size: 13px;
     }
     #button {
        transform: translate(-17px, 0px) scale(0.8);
@@ -750,7 +747,7 @@ image{
         row-gap: 20px;
     }
     .price span {
-        font-size: 14px;
+        font-size: 13px;
     }
     .shopping-cart {
         width: 240px;
@@ -860,7 +857,7 @@ image{
         row-gap: 30px;
     }
     .product-item-name a {
-        font-size: 11px;
+        font-size: 18px;
     }
     .product-item-name {
         text-align: center;
