@@ -780,7 +780,7 @@ image{
     }
     p#info-tt {
         margin-left: 0px;
-        margin-top: 2px;
+        margin-top: 0px;
         
     }
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
@@ -837,7 +837,7 @@ image{
     }
     .header-menu ul {
         left: 130px;
-        font-size: 14px;
+        font-size: 15px;
     }
     .shopping-cart {
         width: 322px;
@@ -1010,7 +1010,7 @@ image{
         left: 110px;
     }
     .header-icon {
-        left: 60%;
+        left: 62%;
     }
     .info-account {
         padding-bottom: 15px;
