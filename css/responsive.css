@@ -268,7 +268,7 @@ image{
         margin-top:-45px;
     }
     .header-icon{
-        left: 70%;
+        left: 69%;
     }
     .header-menu{
         position: relative;
@@ -422,6 +422,9 @@ image{
     .intro-item-title h5 {
         margin-bottom: 18px;
     }
+    .contacts-list {
+        column-gap: 25px;
+    }
 }
 
 /* màn hình 425px */
@@ -454,6 +457,9 @@ image{
     }
     .top-content {
         width: auto;
+    }
+    .header-menu ul {
+        top: 70px;
     }
     button.btn.btn-danger {
         font-size: 14px; 
@@ -752,7 +758,7 @@ image{
     .shopping-cart {
         width: 240px;
         position: relative;
-        right: 300px;
+        right: 125px;
         top: 52px;
     }
     .cart-item-image {
@@ -775,7 +781,7 @@ image{
     p#info-tt {
         margin-left: 0px;
         margin-top: 2px;
-        padding-bottom: 8px;
+        
     }
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
         bottom: -2px;
@@ -834,9 +840,9 @@ image{
         font-size: 14px;
     }
     .shopping-cart {
-        width: 338px;
-        margin-top: -275px;
-        left: -398px;
+        width: 322px;
+        margin-top: -266px;
+        left: -217px;
     }
     .header-menu #toggle-header-menu {
         margin-left: 125px;
@@ -989,28 +995,60 @@ image{
     .menu-product {
         margin-top: -20px;
     }
+    .shopping-cart {
+        width: 272px;
+        margin-top: -340px;
+        left: -239px;
+    }
 } 
 
 @media screen and (max-width: 600px) {
     .container{
         width: 95%;
     }
-    .contacts-list{
-        width: auto;
-    }
-    .contacts{
-        width: auto;
-    }
-    .quicklink {
-        width: auto;
-    }
-    .information {
-        width: auto;
-    }
-    .account{
-        width: auto;
+    .header-logo {
+        left: 110px;
     }
     .header-icon {
-        left: 62%;
+        left: 60%;
+    }
+    .info-account {
+        padding-bottom: 15px;
+    }
+    .contacts-list {
+        column-gap: 15px;
+    }
+    .contact-title h4 {
+        font-size: 14px;
+    }
+    .info {
+        font-size: 12px;
+    }
+    .info-account a {
+        font-size: 12px;
+    }
+    .footer-contacts {
+        margin-top: 45px;
+    }
+    /* .intro-item-icon img {
+        width: 35px;
+    }
+    .intro-item-icon img {
+        margin-bottom: 2px;
+    }
+    .intro-item-title h5 {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .intro-item-icon-footer img {
+        width: 50px;
+        margin-bottom: 5px;
+    }
+    .intro-item-icon-footer2 img {
+        width: 35px;
+        margin-bottom: 5px;
+    } */
+    .shopping-cart {
+        margin-left: 356px;
     }
 }
