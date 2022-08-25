@@ -17,7 +17,7 @@ image{
         column-gap: 10px;
     }
     .header-main{
-        column-gap: 50px;
+        column-gap: 46px;
     }
     .product-item {
         width: calc(25% - 8px);
@@ -36,6 +36,9 @@ image{
     }
     .contacts-list {
         column-gap: 120px;
+    }
+    .shopping-cart{
+        margin-left: auto;
     }
 
 }
@@ -69,97 +72,14 @@ image{
         column-gap: 28px;
     }
 }
-
-
-/* màn hình 1024 */
-
-@media screen and (max-width: 1025px) {
-
-    .container{
-        width: 90%;
-        
-    }
-    .header-logo {
-        margin-top: 0px;
-    }
-    .header-main{
-        column-gap: 50px;
-    }
-    .text-banner{
-        width: 525px;
-    }
-    .intro-item-title h5 {
-        margin-bottom: 15px;
-    }
-
-
-    .brand-list{
-        column-gap: 30px;
-    } 
-
-    .header-menu ul{
-        column-gap: 22px;
-    }
-    .header-icon ul{
-        column-gap: 20px;
-    }
-    .intro-all {
-        margin-top: 24px;
-    }
-    .intro-item-icon img{
-        margin-bottom: 16px;
-        width: 43px
-    }
-    .intro-item-title {
-        font-size: 12px;
-        margin-bottom: 8px;
-    }
-    .intro-item-content {
-        font-size: 14px;
-        margin-top: -5px;
-        line-height: 20px;
-        width: auto;
-    }
-    .intro-item-icon-footer img {
-        margin-bottom: 16px;
-        margin-top: 20px;
-        width: 60px;
-    }
-    .intro-item-icon-footer2 img {
-        margin-bottom: 16px;
-        width: 43px;
-    }
-    .shopping-cart{
-      
-        transform: translate(-40%, -1%) scale(1.0);
-    }
-    .item-numb{
-        right: 74px;
-        top: 8px;
-    }
-    .product-item{
-        width: calc(25% - 12px);
-    }
-    .product-list{
-        column-gap: 13.5px;
-    }
-    .product-icon ul {
-
-        right: 0px;
-        top: 10px;
-    }
-    .contacts {
-        width: auto;
-    }
-    .intro-item-img {
-        height: 197px;
-    }
+@media screen and (max-width: 800px) {
     .contacts-list {
-        column-gap: 75px;
+        column-gap: 25px;
     }
-
+    .header-menu ul {
+        column-gap: 8px;
+    }
 }
-/* man hinh 950 */
 @media screen and (max-width: 950px){
     .header-main {
         column-gap: 40px;
@@ -220,16 +140,130 @@ image{
     .intro-item-title h5 {
         margin-bottom: 0px;
     }
+    .intro-item-title h5 {
+        font-size: 16px;
+    }
+    .intro-item-content {
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 855px){
     .contacts-list {
-        column-gap: 35px;
+        column-gap: 25px;
     }
     .header-menu ul {
         column-gap: 15px;
     }
 
 }
+@media screen and (max-width: 730px){
+    .header-logo {
+        left: 130px;
+    }
+    .footer-contacts {
+        column-count: 2;
+
+    }
+    .contacts-list{
+        flex-direction: column;
+        flex-wrap: wrap;
+    } 
+    .info-account {
+        padding-bottom: 22px;
+    }
+    .intro-item-content {
+        width: auto;
+        font-size: 12px;
+    }
+}
+
+
+
+/* màn hình 1024 */
+
+@media screen and (max-width: 1025px) {
+
+    .container{
+        width: 90%;
+        
+    }
+    .header-logo {
+        margin-top: 0px;
+    }
+    .header-main{
+        column-gap: 50px;
+    }
+    .text-banner{
+        width: 525px;
+    }
+    .intro-item-title h5 {
+        margin-bottom: 15px;
+    }
+
+
+    .brand-list{
+        column-gap: 30px;
+    } 
+
+    .header-menu ul{
+        column-gap: 22px;
+    }
+    .header-icon ul{
+        column-gap: 20px;
+    }
+    .intro-all {
+        margin-top: 24px;
+    }
+    .intro-item-icon img{
+        margin-bottom: 16px;
+        width: 43px
+    }
+    .intro-item-title {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .intro-item-content {
+        font-size: 14px;
+        margin-top: -5px;
+        line-height: 20px;
+        width: auto;
+    }
+    .intro-item-icon-footer img {
+        margin-bottom: 16px;
+        margin-top: 20px;
+        width: 60px;
+    }
+    .intro-item-icon-footer2 img {
+        margin-bottom: 16px;
+        width: 43px;
+    }
+    .item-numb{
+        right: 74px;
+        top: 8px;
+    }
+    .product-item{
+        width: calc(25% - 12px);
+    }
+    .product-list{
+        column-gap: 13.5px;
+    }
+    .product-icon ul {
+
+        right: 0px;
+        top: 10px;
+    }
+    .contacts {
+        width: auto;
+    }
+    .intro-item-img {
+        height: 197px;
+    }
+    .contacts-list {
+        column-gap: 75px;
+    }
+
+}
+
 /* màn hình 768px */
 @media screen and (max-width: 769px) {
     .all{
@@ -357,10 +391,9 @@ image{
     }
     .shopping-cart {
         border: 3px solid white;
-        margin-left: 530px;
         margin-top: -265px;
         background-color: #f5f5f5;
-        width: 306px
+        width: 450px
     }
     .cart-row {
         position: relative;
@@ -424,6 +457,43 @@ image{
     }
     .contacts-list {
         column-gap: 25px;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .header-main{
+        column-gap: 8px;
+    }
+    .header-logo {
+        left: 125px;
+    }
+    .header-menu ul {
+        top: 80px;
+    }
+    .intro-item-icon img {
+        margin-bottom: 5px;
+        width: 35px;
+    }
+    .intro-item-title h5 {
+        margin-bottom: 12px;
+    }
+    .intro-item-content {
+        line-height: 15px;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 550px){
+    .header-icon {
+        left: 65%;
+    }
+    .text-banner {
+        width: auto;
+    }
+    .textbanner-title h1 {
+        font-size: 50px;
+    }
+    .textbanner-header h3 {
+        font-size: 35px;
     }
 }
 
@@ -577,7 +647,7 @@ image{
     }
     .header-icon{
         margin-top: -10px;
-        margin-left: -3%;
+        margin-left: -6%;
     }
     .header-menu #toggle-header-menu {
         padding-top: 0px;
@@ -706,10 +776,13 @@ image{
         padding-bottom: 45px;
     }
     .footer-contacts {
+        column-count: 1;
         margin-top: 36px;
     }
+
     .contacts-list{
-        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
 
     }
     .contact-title a {
@@ -756,9 +829,8 @@ image{
         font-size: 13px;
     }
     .shopping-cart {
-        width: 240px;
+        width: 270px;
         position: relative;
-        right: 110px;
         top: 52px;
     }
     .cart-item-image {
@@ -781,6 +853,7 @@ image{
     p#info-tt {
         margin-left: 0px;
         margin-top: 0px;
+        padding-bottom: 8px;
         
     }
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
@@ -805,7 +878,9 @@ image{
     .footer-top {
         padding-bottom: 10px;
     }
-
+    .info-account {
+        padding-bottom: 0px;
+    }
 }
  
 
@@ -828,21 +903,16 @@ image{
         margin-left: -128px;
         margin-top: -15px;
     }
-    .header-logo {
-        margin-top: 0px;
-    }
     .header-icon {
-        margin-left: 6px;
-        margin-top: -12px;
+        margin-left: -4px;
+       
     }
     .header-menu ul {
         left: 130px;
         font-size: 15px;
     }
     .shopping-cart {
-        width: 332px;
-        margin-top: -266px;
-        left: -213px;
+        width: auto;
     }
     .header-menu #toggle-header-menu {
         margin-left: 125px;
@@ -982,7 +1052,7 @@ image{
         font-size: 18px;
     }
     .header-icon {
-        margin-left: -14px;
+        margin-left: -25px;
         margin-top: -12px;
     }
     .intro-item-icon-footer img {
@@ -996,58 +1066,8 @@ image{
         margin-top: -20px;
     }
     .shopping-cart {
-        width: 280px;
-        left: -234px;
+        top: 32px;
     }
 } 
 
-@media screen and (max-width: 600px) {
-    .container{
-        width: 95%;
-    }
-    .header-logo {
-        left: 110px;
-    }
-    .header-icon {
-        left: 62%;
-    }
-    .info-account {
-        padding-bottom: 15px;
-    }
-    .contacts-list {
-        column-gap: 15px;
-    }
-    .contact-title h4 {
-        font-size: 14px;
-    }
-    .info {
-        font-size: 12px;
-    }
-    .info-account a {
-        font-size: 12px;
-    }
-    .footer-contacts {
-        margin-top: 45px;
-    }
-    /* .intro-item-icon img {
-        width: 35px;
-    }
-    .intro-item-icon img {
-        margin-bottom: 2px;
-    }
-    .intro-item-title h5 {
-        margin-bottom: 10px;
-        font-size: 16px;
-    }
-    .intro-item-icon-footer img {
-        width: 50px;
-        margin-bottom: 5px;
-    }
-    .intro-item-icon-footer2 img {
-        width: 35px;
-        margin-bottom: 5px;
-    } */
-    .shopping-cart {
-        margin-left: 356px;
-    }
-}
+
