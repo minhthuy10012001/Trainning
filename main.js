@@ -90,58 +90,51 @@ let products = [
     img: './images/maytap.png',
     name: 'Body Champ Cardio',
     price: 342,
-    inCart: 0,
-    count: 1
+    inCart: 0
   },
   {
   
     img: './images/maytap1.png',
     name: 'Body Solid GCEC340',
     price: 214,
-    inCart: 0,
-    count: 1
+    inCart: 0
   },
   {
     img: './images/maytap2.png',
     name: 'Bowflex BXE116 Elliptical',
     price: 421,
-    inCart: 0,
-    count: 1
+    inCart: 0
   },
   {
     img: './images/maytap3.png',
     name: 'ETHOS GHD',
     price: 152,
-    inCart: 0,
-    count: 1
+    inCart: 0
+
   },
   {
     img: './images/maytap4.png',
     name: 'AFG Pro 7.2AI Incline',
     price: 252,
-    inCart: 0,
-    count: 1
+    inCart: 0
   },
   {
     img: './images/maytap5.png',
     name: 'Weight Bench',
     price: 412,
-    inCart: 0,
-    count: 1
+    inCart: 0
   },
   {
     img: './images/maytap6.png',
     name: 'ProForm Hiit Trainer Lite 5.9',
     price: 300,
-    inCart: 0,
-    count: 1
+    inCart: 0
   },
   {
     img: './images/maytap7.png',
     name: 'Fitness Gear Pro',
     price: 124,
-    inCart: 0,
-    count: 1
+    inCart: 0
   }
 ];
 
@@ -152,6 +145,8 @@ else{
   ready();
 }
 function ready(){
+
+
   var removeCartItemButtons = document.getElementsByClassName('btn-danger');
   console.log(removeCartItemButtons);
 
@@ -171,6 +166,7 @@ function ready(){
   for(var i =0; i < addToCartButtons.length; i++){
     var button = addToCartButtons[i];
     button.addEventListener('click', addToCartClicked)
+    
   }
 
 }
@@ -179,7 +175,6 @@ function removeCartItem(event){
   console.log(buttonClicked.parentElement.parentElement.parentElement);
   buttonClicked.parentElement.parentElement.parentElement.remove();
   updateCartTotal();
-  updateNumberCart();
 }
 function quantityChanged(event){
   var input = event.target;
@@ -194,9 +189,9 @@ function addToCartClicked(event) {
   var shopItem = button.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
   var title = shopItem.getElementsByClassName('name')[0].innerText
   var price = shopItem.getElementsByClassName('price')[0].innerText
-  var imageSrc = shopItem.getElementsByClassName('product-item-img')[0].src
+  var imageSrc = shopItem.getElementsByClassName('product-item-img')[0].src;
   addItemToCart(title, price, imageSrc)
-  updateCartTotal();
+  updateCartTotal(); 
 
 }
 function addItemToCart(title, price, imageSrc){
@@ -204,6 +199,7 @@ function addItemToCart(title, price, imageSrc){
   cartRow.innerText = title;
   cartRow.classList.add('cart-row');
   var cartItems = document.getElementsByClassName('cart-items')[0];
+
   var cartItemNames = cartItems.getElementsByClassName('cart-item-title');
   for(var i = 0; i < cartItemNames.length; i++)
   {
@@ -212,6 +208,7 @@ function addItemToCart(title, price, imageSrc){
       return;
     }
   }
+
   var cartRowContents = `
     <div class="cart-item cart-column">
       <img class="cart-item-image" src= "${imageSrc}" width="100" height="100">
@@ -227,55 +224,28 @@ function addItemToCart(title, price, imageSrc){
   cartItems.append(cartRow);
   cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem);
   cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged);
-}
-function setItems(product)
-{
-  let cartItem = localStorage.getItem("productsInCart");
-  cartItem = JSON.parse(cartItems);
-
-  if(cartItem != null)
-  {
-    if(cartItem[product.title] === undefined){
-      cartItem = {
-        ...cartItem,
-        [product.name]: product
-      }
-    }
-    
-    cartItem[product.name].inCart += 1;
-  }
-  else{
-    product.inCart = 1;
-    cartItem = {
-      [product.title]: product
-    }
-  }
-
   
-  localStorage.setItem('productsInCart', JSON.stringify(cartItems));
-
 }
+
 function updateCartTotal(){
   var cartItemContainer = document.getElementsByClassName('cart-items')[0];
   var cartRows = cartItemContainer.getElementsByClassName('cart-row');
   var total = 0;
-  for(var i = 0; i < cartRows.length; i++){
+
+  for(var i = 0; i < cartRows.length; i ++){
     var cartRow = cartRows[i];
     var priceElement = cartRow.getElementsByClassName('cart-price')[0];
     var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
     var price = parseFloat(priceElement.innerText.replace('$', ''));
-    var quantity = quantityElement.value
-    console.log(quantityElement);
+    var quantity = quantityElement.value;
     total = total + (price * quantity);
-    
   }
+
   total = Math.round(total * 100) / 100;
   document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total + '.00';
-  document.getElementsByClassName('item-numb')[0].innerText = total + '.00$'; 
+  document.getElementsByClassName('item-numb')[0].textContent = i /= 1;
+
 }
-
-
-
 
 
 

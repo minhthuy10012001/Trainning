@@ -243,6 +243,9 @@ image{
     .header-menu ul {
         column-gap: 8px;
     }
+    intro-item-content {
+        padding-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 730px){
@@ -534,6 +537,11 @@ image{
 @media screen and (max-width: 490px){
     .header-icon {
         left: 60%;
+    }
+}
+@media screen and (max-width: 460px){
+    .list-menu button {
+        padding: 0px 0px 12px 18px;
     }
 }
 
@@ -1074,8 +1082,6 @@ image{
         height: auto;
     }
 }
-
-
 
 /* màn hình 320px */
 @media screen and (max-width: 320px){
