@@ -213,11 +213,13 @@ ul.list-icon {
     display: flex;
 }
 .list-intro{
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
     background-color: #ffffff;
-    /* max-height: 500px; */
 }
 .intro-item{
-    width: 33.34%;
+    width: 33.33%;
 }
 
 .menu-product {
