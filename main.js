@@ -216,10 +216,10 @@ function addItemToCart(title, price, imageSrc){
   for(var i = 0; i < cartItemNames.length; i++)
   {
     if(cartItemNames[i].innerText == title){
-      countItem += 1;
-      updateCartTotal();
-      console.log(countItem);
-      // alert("This item is already added to the cart");
+      // countItem += 1;
+      // updateCartTotal();
+      // console.log(countItem);
+      alert("This item is already added to the cart");
       return;
     }
     
