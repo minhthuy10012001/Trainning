@@ -132,6 +132,7 @@ ul.list-icon {
     color: #ffffff;
     position: relative;
     top: 220px;
+    z-index: 1;
 }
 
 .textbanner-title h1{
@@ -242,7 +243,7 @@ ul.list-icon {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 
 }
 .intro-item-icon-footer img{
@@ -250,14 +251,14 @@ ul.list-icon {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 22px;
-    margin-top: 42px;
+    margin-top: 44px;
 }
 .intro-item-icon-footer2 img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 22px;
-    margin-top: -5px;
+    margin-top: -3px;
 }
 .intro-item-title h5{
     text-align: center;
@@ -294,7 +295,6 @@ ul.list-icon {
     font-weight: bold;
     background-color: #ffffff;
     padding: 0px 12px 12px 18px;
-    margin-top: -2px;
 }
 .list-menu button::after{
     content: "";
@@ -506,7 +506,7 @@ button.btn.btn-primary.add-cart {
 
 /* footer  */
 .footer-top {
-    padding-bottom: 29px;
+    padding-bottom: 25px;
 }
 .footer{
     max-width: 100%;
@@ -563,11 +563,14 @@ button.btn.btn-primary.add-cart {
 
 
 .footer-contacts {
-    margin-top: 72px;
+    margin-top: 73px;
 }
 .contacts-list {
     display: flex;
     column-gap: 32px;
+}
+li{
+    list-style-type: none;
 }
 .contact-title{
     padding-bottom: 27px;
@@ -601,10 +604,12 @@ p#info-tt{
 .info a:hover{
     color: #ffffff;
 }
-.info-account {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
+
+.info ul li {
+    padding-bottom: 20px;
+}
+span#info-tt {
+    margin-left: 20px;
 }
 .contacts {
     width: 25%;
@@ -617,7 +622,7 @@ p#info-tt{
     color: rgb(119, 119, 119);
     font-family: 'Poppins', sans-serif;
 }
-.info-account a p{
+.info-account ul li{
     padding-bottom: 19px;
 }
 .info-account a :hover{
@@ -703,6 +708,7 @@ li#content {
 
 /* shopping-cart */
 .shopping-cart {
+    position: relative;
     background-color: #f5f5f5;
     width: 600px;
     margin-top: -310px;
@@ -711,13 +717,14 @@ li#content {
     border-radius: 16px;
     padding: 8px;
     display: none;
-    z-index: 10;
+    z-index: 99;
 }
 .shopping-cart a {
     text-decoration: none;
     color: black;
 }
 .cart-items{
+
     border-bottom: 1px solid #00000036;
 }
 .header-cart {
@@ -777,7 +784,7 @@ span.cart-price.cart-column {
     font-size: 16px;
 }
 button.btn.btn-danger {
-    margin-left: 60px;
+    margin-left: 50px;
     border: none;
 }
 .cart-total {
@@ -821,4 +828,11 @@ button.btn.btn-primary.btn-purchase {
     right: 85px;
     bottom: 22px;
 }
-
+span.minus{
+    cursor: pointer;
+    font-size: 52px;
+}
+span.plus{
+    cursor: pointer;
+    font-size: 30px;
+}
