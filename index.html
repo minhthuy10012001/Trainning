@@ -57,7 +57,7 @@
                                         </li>
                                         <li class = "iconhd" id = "icon">|</li>
                                         <li id = "shopping" class = "cart"><a href="#"><button><i class="fa-solid fa-basket-shopping" id = "icon"></i></a></button>
-                                            <span class = "item-numb">0</span>
+                                            <!-- <span class = "item-numb">0</span> -->
                                         </li>
                                         <li class = "iconhd" id = "icon">|</li>
                                         <li class = "iconhd"><a href="#"><button><i class="fa-solid fa-user" id="icon"></i></a></button>
@@ -94,20 +94,19 @@
                             </div>
                         </div>
                         <!-- shopping cart -->
-                        <div class="shopping-cart">
+                        <div class="shopping-cart hide">
                             <h2 class="header-cart">Shopping Cart</h2>
                             <div class="cart-items">
+                                <div class="cart-item">
+
+                                </div>
                                 
                             </div>
-
-                            <div class="cart-total">
-                                <strong class="cart-total-title">Total:</strong>
-                                <span class="cart-total-price">$0.00</span>
-                            </div>
+                            <div class="cart-total-price">Total: $0.00</div>
                             <button class="btn btn-primary btn-purchase" type="button" onclick= "alert('Thank you!')" ><a href="">ORDER</a></button>
                         </div>
-                         </div>
-                        </div>
+                         
+                        </div>z
                     </div> 
                 </div>
         </header>
@@ -188,8 +187,8 @@
                     <div class="product">
                         <div class = "tabcontent" id="TopSellers">
                             <div class="product-list">
-                                <div class = "product-item">     
-                                        <a href="#"><img class="product-item-img" src="images/maytap.png" alt=""/></a>
+                                <div class = "product-item" data-id="1">     
+                                    <a href="#"><img class="product-item-img" src="images/maytap.png" alt=""/></a>
                                     <div class="product-item-name">
                                         <div class="name">
                                             <a href="#">Body Champ Cardio</a>
@@ -201,7 +200,7 @@
                                     <div class="product-icon">
                                         <ul>
                                             <li>
-                                                <button type="button" class = "btn btn-primary add-cart cart1"><a href="#"><i class="fa-solid fa-basket-shopping" id = "shop"></i></a></i></button>
+                                                <button type="button" class = "btn btn-primary add-cart"><a href="#"><i class="fa-solid fa-basket-shopping" id = "shop"></i></a></i></button>
                                             </li>
                                             <li onclick= "alert('A lot of people have viewed this product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-eye"></i></a></li>
                                             <li onclick= "alert('Thanks for liking our product. Press \'OK\' to close this.')"><a href=""><i class="fa-solid fa-heart"></i></a>
@@ -210,7 +209,7 @@
                                         
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="2">
                                    
                                        <a href="#"> <img class="product-item-img" src="images/maytap1.png" alt=""></a>
                                   
@@ -233,13 +232,13 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="3">
                                     
                                        <a href="#"><img class="product-item-img" src="images/maytap2.png" alt=""></a>
                                     
                                     <div class="product-item-name">
                                         <div class="name">
-                                            <a href="#">Bowflex BXE116 Elliptical</a>
+                                            <a href="#" >Bowflex BXE116 Elliptical</a>
                                         </div>
                                         <div class="price">
                                             <span>$421.00</span>
@@ -256,7 +255,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="4">
                                     
                                         <a href="#"><img class="product-item-img" src="images/maytap3.png" alt=""></a>
                                     
@@ -279,7 +278,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="5">
                                     
                                        <a href="#"> <img class="product-item-img" src="images/maytap4.png" alt=""></a>
                                     
@@ -302,7 +301,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="6">
                                     
                                        <a href="#"><img class="product-item-img" src="images/maytap5.png" alt=""></a>
                                    
@@ -325,12 +324,12 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="7">
                                     
                                         <a href="#"><img class="product-item-img" src="images/maytap6.png" alt=""></a>
                                     
                                     <div class="product-item-name">
-                                        <div class="name">
+                                        <div class="name"  id = "7">
                                             <a href="#">ProForm Hiit Trainer Lite 5.9</a>
                                         </div>
                                         <div class="price">
@@ -347,7 +346,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id = "8">
                                     
                                         <a href="#"><img class="product-item-img" src="images/maytap7.png" alt=""></a>
                                    
@@ -375,7 +374,7 @@
                         </div>
                         <div class = "tabcontent" id="FeaTured">
                             <div class="product-list">
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="1">
                                     
                                         <a href="#"><img class="product-item-img" src="images/maytap.png" alt=""></a>
                                     
@@ -399,7 +398,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id = "2">
                                     
                                         <a href="#"><img class="product-item-img" src="images/maytap1.png" alt=""></a>
                                     
@@ -423,7 +422,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="3">
                                     
                                         <a href="#"><img class="product-item-img" src="images/maytap2.png" alt=""></a>
                                     
@@ -446,12 +445,12 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div  class = "product-item">
+                                <div  class = "product-item" data-id="4">
                                     
                                         <a href="#"><img class="product-item-img" src="images/maytap3.png" alt=""></a>
                                     
                                     <div class="product-item-name">
-                                        <div class="name">
+                                        <div class="name" id = "4">
                                             <a href="#">ETHOS GHD</a>
                                         </div>
                                         <div class="price">
@@ -469,7 +468,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="5">
                                     
                                        <a href="#"><img class="product-item-img" src="images/maytap4.png" alt=""></a>
                                     
@@ -492,7 +491,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="6">
                                    
                                        <a href="#"><img class="product-item-img" src="images/maytap5.png" alt=""></a>
                                     
@@ -515,7 +514,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="7">
                                     
                                         <a href="#"><img class="product-item-img" src="images/maytap6.png" alt=""></a>
                                     
@@ -538,7 +537,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="8">
                                     
                                         <a href="#"><img class="product-item-img" src="images/maytap7.png" alt=""></a>
                                    
@@ -567,7 +566,7 @@
                         <div class = "tabcontent" id="MostReviews">
                             <div class="product-list">
                                 
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="2">
                                     
                                         <a href="#"><img class="product-item-img" src="images/maytap1.png" alt=""></a>
                                   
@@ -590,7 +589,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="3">
                                         <a href="#"><img class="product-item-img" src="images/maytap2.png" alt=""></a>
                                     <div class="product-item-name">
                                         <div class="name">
@@ -611,12 +610,12 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id = "4">
                                     
                                         <a href="#"><img  class="product-item-img"src="images/maytap3.png" alt=""></a>
                                     
                                     <div class="product-item-name">
-                                        <div class="name">
+                                        <div class="name" id = "4">
                                             <a href="#">ETHOS GHD</a>
                                         </div>
                                         <div class="price">
@@ -634,12 +633,12 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="5">
                             
                                         <a href="#"><img class="product-item-img" src="images/maytap4.png" alt=""></a>
             
                                     <div class="product-item-name">
-                                        <div class="name">
+                                        <div class="name" id = "5">
                                             <a href="#">AFG Pro 7.2AI Incline</a>
                                         </div>
                                         <div class="price">
@@ -657,7 +656,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="6">
                                    
                                         <a href="#"><img class="product-item-img" src="images/maytap5.png" alt=""></a>
                                     
@@ -680,7 +679,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id="7">
                                     
                                         <a href="#"><img class="product-item-img" src="images/maytap6.png" alt=""></a>
                                     
@@ -703,7 +702,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class = "product-item">
+                                <div class = "product-item" data-id = "8">
                                     
                                         <a href="#"><img class="product-item-img" src="images/maytap7.png" alt=""></a>
                                     
@@ -730,10 +729,7 @@
                         </div>
                      </div>
 
-    <!-- popup -->
-
-
-                        
+    <!-- popup -->                    
 
     <!-- aside -->
                      <div class = "aside">

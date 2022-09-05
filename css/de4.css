@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -723,8 +724,10 @@ li#content {
     text-decoration: none;
     color: black;
 }
-.cart-items{
-
+.cart-item{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
     border-bottom: 1px solid #00000036;
 }
 .header-cart {
@@ -787,12 +790,10 @@ button.btn.btn-danger {
     margin-left: 50px;
     border: none;
 }
-.cart-total {
+
+.cart-total-price {
     margin-right: 50px;
     text-align: right;
-    font-size: 16px;
-}
-strong.cart-total-title {
     font-size: 16px;
     font-family: 'Poppins';
 }
@@ -836,3 +837,11 @@ span.plus{
     cursor: pointer;
     font-size: 30px;
 }
+:root{
+    --after-content: '';
+}
+.non-empty::after{
+    content: var(--after-content);
+    font-size: 16px;
+    
+  }
