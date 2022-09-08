@@ -717,7 +717,7 @@ li#content {
     border: 1px solid white;
     border-radius: 16px;
     padding: 8px;
-    display: none;
+    /* display: none; */
     z-index: 99;
 }
 .shopping-cart a {
@@ -852,4 +852,7 @@ span.plus{
 strong.cart-total-title {
     /* margin-right: auto; */
     margin-left: auto;
+}
+.js-is-hidden{
+    display: none;
 }
