@@ -984,6 +984,9 @@ image{
         left: 72px;
         top: 43px;
     }
+    .cart-total-price {
+        font-size: 12px;
+    }
 }
  
 
@@ -994,7 +997,9 @@ image{
         width: 100%;
         column-gap: 7px;
     }
-
+    .cart-total-price {
+        font-size: 16px;
+    }
     .header {
         height: 80px;
     }

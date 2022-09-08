@@ -849,3 +849,7 @@ span.plus{
     font-family: 'Poppins';
     /* text-align: right; */
 }
+strong.cart-total-title {
+    /* margin-right: auto; */
+    margin-left: auto;
+}
