@@ -443,8 +443,8 @@ image{
     span.cart-price.cart-column {
         position: absolute;
         left: 96px;
-        top: 20px;
-        width: 130px;
+        top: 30px;
+        width: auto
     }
     input.cart-quantity-input {
         position: absolute;
@@ -906,7 +906,10 @@ image{
     .info-account a p {
         padding-bottom: 6px;
     }
+    .cart-item.cart-column {
 
+        width:auto;
+    }
     .tabcontent {
         padding-top: 20px;
     }
@@ -934,7 +937,7 @@ image{
     }
     span.cart-item-title {
         font-size: 12px;
-        margin-top: 5px;
+        margin-top: -15px;
     }
     .intro-item-img img{
         width: 400px;
@@ -1097,7 +1100,7 @@ image{
     }
     span.cart-item-title {
         font-size: 16px;
-        margin-top: 0px;
+        
     }
     span.cart-price.cart-column {
         left: 80px;

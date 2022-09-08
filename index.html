@@ -57,7 +57,7 @@
                                         </li>
                                         <li class = "iconhd" id = "icon">|</li>
                                         <li id = "shopping" class = "cart"><a href="#"><button><i class="fa-solid fa-basket-shopping" id = "icon"></i></a></button>
-                                            <!-- <span class = "item-numb">0</span> -->
+                                            <span class = "item-numb">0</span>
                                         </li>
                                         <li class = "iconhd" id = "icon">|</li>
                                         <li class = "iconhd"><a href="#"><button><i class="fa-solid fa-user" id="icon"></i></a></button>
@@ -97,16 +97,20 @@
                         <div class="shopping-cart hide">
                             <h2 class="header-cart">Shopping Cart</h2>
                             <div class="cart-items">
-                                <div class="cart-item">
+                                <!-- <div class="cart-item">
 
-                                </div>
+                                </div> -->
                                 
                             </div>
-                            <div class="cart-total-price">Total: $0.00</div>
+                            <div class="total">
+                            <strong class = "cart-total-title">Total: </strong>
+
+                            <div class="cart-total-price">$0.00</div>
+                            </div>
                             <button class="btn btn-primary btn-purchase" type="button" onclick= "alert('Thank you!')" ><a href="">ORDER</a></button>
                         </div>
                          
-                        </div>z
+                        </div>
                     </div> 
                 </div>
         </header>
@@ -187,7 +191,7 @@
                     <div class="product">
                         <div class = "tabcontent" id="TopSellers">
                             <div class="product-list">
-                                <div class = "product-item" data-id="1">     
+                                <div class = "product-item" data-id ="1">     
                                     <a href="#"><img class="product-item-img" src="images/maytap.png" alt=""/></a>
                                     <div class="product-item-name">
                                         <div class="name">
