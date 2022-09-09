@@ -86,11 +86,6 @@ $(document).ready(function(){
         });
       });
 
-    //click icon shopping
-    // $('.fa-basket-shopping').click(function(){
-    //   $('.shopping-cart').slideToggle();
-    // });
-
     // click icon search
     $(".fa-magnifying-glass").click(function showSearch() {
         $(".header-icon").addClass('show-search');
@@ -168,7 +163,7 @@ function addItemToCart(id, title, price, imageSrc){
     var product = document.querySelectorAll('.cart-item-title');
     if(product[i].innerHTML == title){
       countItem ++;
-      alert('The product already exists in the cart');
+    alert('This item is already added to the cart');
     }
     
   }
