@@ -101,6 +101,15 @@ $(document).ready(function(){
  });
 
 
+$('.product-icon').on('click', '.add-cart',function (event) {
+  event.preventDefault();
+});
+$('.product-icon').on('click', '#see',function (event) {
+  event.preventDefault();
+});
+$('.product-icon').on('click', '#heart',function (event) {
+  event.preventDefault();
+});
 
 
 // add to cart
@@ -148,9 +157,12 @@ function ready(){
   for(var i =0; i < addToCartButtons.length; i++){
     var button = addToCartButtons[i];
     button.addEventListener('click', addToCartClicked)
-    
+ 
+
   }  
 }
+
+
 
 function addItemToCart(id, title, price, imageSrc){
   let countItem = 0;
@@ -191,6 +203,7 @@ function addItemToCart(id, title, price, imageSrc){
   var cartI = document.querySelector('.cart-items');
   cartI.append(cartRow);
   cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem);
+  alert("added to cart")
   //cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged); 
 
   }
@@ -243,11 +256,11 @@ function addToCartClicked(event) {
   var imageSrc = shopItem.querySelector('.product-item-img').src;
   
   addItemToCart(id, title, price, imageSrc);
-  console.log(title);
+  
   updateCartTotal();
 
 }
-  
+
   
   $('.cart-items').on('click', '.minus',function () {
     var $input = $(this).parent().find('input');
